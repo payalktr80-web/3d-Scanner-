@@ -1,27 +1,43 @@
 {
-  "expo": {
-    "name": "3DScanner",
-    "slug": "3DScanner",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-sharing"
-    ]
-  }
+    "expo": {
+        "name": "3DScanner",
+            "slug": "3d-scanner",
+                "version": "1.0.0",
+                    "orientation": "portrait",
+                        "icon": "./assets/icon.png",
+                            "userInterfaceStyle": "light",
+                                "splash": {
+                                      "image": "./assets/splash.png",
+                                            "resizeMode": "contain",
+                                                  "backgroundColor": "#ffffff"
+                                                      },
+                                                          "ios": {
+                                                                "supportsTablet": true
+                                                                    },
+                                                                        "android": {
+                                                                              "adaptiveIcon": {
+                                                                                      "foregroundImage": "./assets/adaptive-icon.png",
+                                                                                              "backgroundColor": "#ffffff"
+                                                                                                    },
+                                                                                                          "package": "com.master.threedscanner"
+                                                                                                              },
+                                                                                                                  "web": {
+                                                                                                                        "favicon": "./assets/favicon.png"
+                                                                                                                            },
+                                                                                                                                "plugins": [
+                                                                                                                                      [
+                                                                                                                                              "expo-camera",
+                                                                                                                                                      {
+                                                                                                                                                                "cameraPermission": "Allow 3DScanner to access your camera to capture scans."
+                                                                                                                                                                        }
+                                                                                                                                                                              ]
+                                                                                                                                                                                  ],
+                                                                                                                                                                                      "extra": {
+                                                                                                                                                                                            "eas": {
+                                                                                                                                                                                                    "projectId": "YOUR_PROJECT_ID_HERE_IF_GENERATED"
+                                                                                                                                                                                                          }
+                                                                                                                                                                                                              }
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                
 }
